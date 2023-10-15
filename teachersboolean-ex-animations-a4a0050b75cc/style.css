@@ -199,3 +199,39 @@
 }
 
 /*animation 13*/
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: movewholetop linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movewholetop {
+    0%{left: 10%;
+        top: -10px;}
+    35%{left: calc(100% - 30px);
+        top: -10px;}
+    50%{left: calc(100% - 30px);
+        top: 100%;}
+    65%{left: 10%;
+        top: -10px;}
+    100%{left: 20%;
+        top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: movewholebottom linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movewholebottom {
+    0%{right: 10%;
+        top: -10px;}
+    35%{right: calc(100% - 30px);
+        top: -10px;}
+    50%{right: calc(100% - 30px);
+        top: 100%;}
+    65%{right: 10%;
+        top: -10px;}
+    100%{right: 20%;
+        top: -10px;}
+}
