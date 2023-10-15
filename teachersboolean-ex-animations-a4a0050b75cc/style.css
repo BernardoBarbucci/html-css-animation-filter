@@ -148,28 +148,54 @@
     filter: grayscale(0.7) sepia(0.4);
 }
 
+/*animations with keyframes*/
+/*animation 10*/
+
 .ex-10-icon{
-    animation: spin 1s linear infinite;
+    animation: spin linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes spinslow {
     0%{transform: rotate(1turn)}    
 }
 
+/*animation 11*/
+
 .ex-11-icon:hover{
-    animation: spin linear;
+    animation: spinslow linear;
     animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
     animation-direction: reverse;
-    animation-delay: 0s;
 }
 @keyframes spinslow {
-    0%{transform: rotate(0);}
-    85%{transform: rotate(315deg);}
-    100%{transform: rotate(0)}
+    0% {transform: rotate(0);}
+    90% {transform: rotate(315deg);}
+    100% {transform: rotate(0);}
 }
 
-.ex-12-button:hover{
-    
+/*animation 12*/
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: movetop linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+@keyframes movetop {
+    0%{left: 10%;}
+    50%{left: calc(100% - 70px);}
+    100%{left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: movebottom linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes movebottom {
+    0%{right: 10%;}
+    50%{right: calc(100% - 70px);}
+    100%{right: 10%;}
+}
+
+/*animation 13*/

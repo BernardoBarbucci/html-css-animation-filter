@@ -63,7 +63,6 @@
         transform: rotate(1turn);
     }
 }
-
 .ex-11-icon:hover {
     animation: spinALittleBit 2s linear;
 }
@@ -78,6 +77,7 @@
         transform: rotate(0);
     }
 }
+/*
 .ex-12-button:hover .ex-12-top-white {
     animation: moveTopWhite 2s linear;
 }
@@ -106,7 +106,7 @@
         right: 20%;
     }
 }
-
+*/
 .ex-13-button:hover .ex-13-top-white {
     animation: moveTopWhiteCompletely 2s linear;
 }
